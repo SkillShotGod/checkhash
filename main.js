@@ -2081,7 +2081,7 @@ check.addEventListener("click",(e)=>{
         
         wordpool.append(li)
         wordpool
-        let inputhasher=query+"+"+addquery
+        let inputhasher=query.toLowerCase()+"+"+addquery.toLowerCase()
         hashing(inputhasher).then((inputhash)=>{
             if (givenhash==inputhash){
                 result.textContent=" "+inputhasher
