@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .container label{
+                display: block;
+            }
+            .container{
+                display: flex;
+            }
+            .wordpool{
+                list-style: none;
+            }
+        </style>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div >
+                <form action="" method="POST" class="form">
+                    <label for="query">Query</label>
+                    <input id="query" type="text" class="query">
+                    <label for="query"> Hash</label>
+                    <input id="hash" type="text" class="hash" value="fa8dff523c940842baf35cad0d827f8b0c8a6dfb9914b8b5c7ac94d84f25111e"><br>
+                    
+                </form>
+                <button  value="Check" class="check">Check</button><br><br>
+                <h5>If the result is found>><span class="result"></span></h5>
+            </div>
+            <div class="wordpool">
+                
+            </div>
+        </div>
+        
+        <script src="./main.js" async defer></script>
+    </body>
+</html>
