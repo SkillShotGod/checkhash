@@ -2057,7 +2057,7 @@ const inpquery= document.querySelector(".query")
 const inputhash= document.querySelector(".hash")
 const result=document.querySelector(".result")
 const wordpool=document.querySelector(".wordpool")
-let givenhash=inputhash.value
+
 
 async function hashing(string) {
     const utf8 = new TextEncoder().encode(string);
@@ -2073,6 +2073,7 @@ async function hashing(string) {
 check.addEventListener("click",(e)=>{
     e.preventDefault
     result.textContent=" "
+    let givenhash=inputhash.value
     let addquery=inpquery.value
     const li= document.createElement('li')
         li.textContent=addquery
